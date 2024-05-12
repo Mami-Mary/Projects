@@ -1,0 +1,109 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: fit-content;
+  margin: 5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+section {
+  margin-top: 6rem;
+}
+
+
+#form-container {
+  background-color: aliceblue;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+form label {
+  font-size: 1.5rem;
+}
+
+form input {
+  width: 30rem;
+  height: 2rem;
+}
+
+form button, #display button {
+  width: 10rem;
+  height: 2rem;
+  padding: 0.5rem;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem 1rem 1rem 1rem;
+  background-color: rgb(122, 122, 198);
+}
+
+.item, .f_item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.item button, .f_item button {
+  grid-column: 2 / 3;
+}
+
+.item a, .f_item a {
+  grid-row: 1 / 3;
+  padding-right: 1.5rem;
+}
+
+#display img, #favorite img {
+  width: 100%;
+}
+
+#display h3 {
+  font-size: 1.5rem;
+}
+
+
+#favorite-list {
+  border-top: 3px solid rgb(220, 220, 220);
+}
+
+#favorite-list h2 {
+  font-size: 2.5rem;
+}
+
+#favorite {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#favorite .f_item {
+  border: 1px solid rgb(220, 220, 220);
+  margin: 1.5rem;
+}
+
+.f_item a {
+  width: 50%;
+}
+
+#favorite h3 {
+  font-size: 1rem;
+}
+
+#favorite button {
+  width: 7rem;
+  height: 2rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  border: none;
+  color: white;
+  background-color: rgb(208, 83, 83);
+  border-radius: 1rem 1rem 1rem 1rem;
+}

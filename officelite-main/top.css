@@ -1,0 +1,140 @@
+/* Style for index.html */
+header {
+  margin-bottom: 3rem;
+}
+
+
+/* section title */
+#title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.charts img {
+  width: 100%;
+}
+
+button {
+  border-radius: 3rem 3rem 3rem 3rem;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+}
+
+.start {
+  background-color: #5175FF;
+  color: white;
+  font-size: 1rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+
+
+/* section plan */
+#plan {
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  text-align: center;
+}
+
+.price {
+  margin-bottom: 1.5rem;
+}
+
+#plan h1 {
+  margin-bottom: 0;
+}
+
+#basic, #pro, #ultimate {
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+#basic, #ultimate {
+  background-color: white;
+}
+
+#pro {
+  background-color: #5175FF;
+  color: white;
+}
+#pro p {
+  color: white;
+}
+
+#basic button, #ultimate button {
+  background-color: #E4EAFF;
+  color: #5175FF;
+}
+
+#pro button {
+  color: #5175FF;
+}
+
+/* fotter */
+footer {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+
+/* for desktop */
+@media screen and (min-width:960px) {
+  #title {
+    flex-direction: row-reverse;
+  }
+}
+
+/* for tablet */
+@media screen and (max-width: 959px) {
+  body {
+    margin: 3rem 5rem 3rem 5rem;
+  }
+
+  #title {
+    flex-direction: row-reverse;
+  }
+
+  #plan {
+    flex-direction: column;
+  }
+
+  #basic, #pro, #ultimate {
+    display: grid;
+    text-align: left;
+  }
+  #plan h3 {
+    grid-area: a;
+  }
+  #plan .price {
+    grid-area: b;
+  }
+  #plan .detail {
+    grid-area: c;
+  }
+  #plan .button {
+    grid-area: d;
+  }
+  #plan div {
+    grid-template-areas: "a a"
+    "b c"
+    "d d";
+  }
+}
+
+/* for mobile */
+@media screen and (max-width: 679px) {
+  #title {
+    flex-direction: column;
+  }
+  #basic, #pro, #ultimate {
+    display: block;
+    text-align: center;
+  }
+}

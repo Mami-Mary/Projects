@@ -1,0 +1,27 @@
+/* Common style */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body {
+  background-image: linear-gradient(to bottom, #F8F8F8 70%, #1C1F2C 30%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  margin: 3rem;
+  width: fit-content;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+p {
+  color: #212529;
+  font-size: 1rem;
+}
+
+button {
+  border-radius: 3rem 3rem 3rem 3rem;
+  font-weight: 700;
+}
